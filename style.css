@@ -1,0 +1,44 @@
+body {
+    font-family: 'Roboto';
+    margin-left: 30px;
+}
+
+.rating-scale,
+.plaintiff-code-dropdown,
+.defendant-code-dropdown,
+.radio-group-section-header,
+.round-radio-group,
+.courtroom-radio-group {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.scoring-section-header {
+    font-weight: 400;
+}
+
+.next-section-button {
+    margin: 20px;
+}
+
+.team-code-dropdown-label {
+    margin: 0 20px;
+}
+
+input[type=radio] {
+    width: 30px;
+    height: 30px;
+}
+
+label {
+    color: red;
+}
+
+.radio-group {
+    display: inline-block;
+    text-align: center;
+}
+
+.radio-group label {
+    display: block;
+}
