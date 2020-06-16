@@ -1,5 +1,6 @@
 <?php
     include 'scorePicker.php';
+    include 'sectionHeader.php';
 ?>
 
 <!DOCTYPE html>

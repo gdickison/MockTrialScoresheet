@@ -2,13 +2,27 @@
     include 'header.php';
 ?>
 <body>
-    <?php
-        function createSectionHeader($sParty, $sActivity, $sRole = null){
-            echo "<h2 class=\"scoring-section-header\">".$sParty."'s ".$sRole." ".$sActivity."</h2>";
-        }
-    ?>
     <h1>Idaho High School Mock Trial Competition Scoresheet</h1>
     <form action="scoresheet.php" name="scoring-form" method="post">
+    <h2>Select Teams</h2>
+        <div>
+            <span class="team-code-dropdown-label">Plaintiff</span>
+            <span class="team-code-dropdown-label">Defendant</span>
+        </div>
+        <div class="team-code-select">
+            <select name="plaintiff_code" id="" class="plaintiff-code-dropdown" required>
+                <option value="ABC">ABC</option>
+                <option value="DEF">DEF</option>
+                <option value="GHI">GHI</option>
+                <option value="XYZ">XYZ</option>
+            </select>
+            <select name="defendant_code" id="" class="defendant-code-dropdown" required>
+                <option value="ABC">ABC</option>
+                <option value="DEF">DEF</option>
+                <option value="GHI">GHI</option>
+                <option value="XYZ">XYZ</option>
+            </select>
+        </div>
         <div class="section-headers">
             <h2 class="radio-group-section-header">Select Round</h2>
             <h2 class="radio-group-section-header">Select Courtroom</h2>
@@ -57,25 +71,6 @@
                 <label>6</label>
             </div>
         </div>
-        <h2>Select Teams</h2>
-        <div>
-            <span class="team-code-dropdown-label">Plaintiff</span>
-            <span class="team-code-dropdown-label">Defendant</span>
-        </div>
-        <div class="team-code-select">
-            <select name="plaintiff_code" id="" class="plaintiff-code-dropdown" required>
-                <option value="ABC">ABC</option>
-                <option value="DEF">DEF</option>
-                <option value="GHI">GHI</option>
-                <option value="XYZ">XYZ</option>
-            </select>
-            <select name="defendant_code" id="" class="defendant-code-dropdown" required>
-                <option value="ABC">ABC</option>
-                <option value="DEF">DEF</option>
-                <option value="GHI">GHI</option>
-                <option value="XYZ">XYZ</option>
-            </select>
-        </div>
         <div class="next-section-button">
             <button>Next</button> <!-- Advance to the next section and save data entered so far -->
         </div>
@@ -88,13 +83,9 @@
         <h3 class="rating-scale">Superior: 9-10</h3>
         <?php
             createSectionHeader('Plaintiff', 'Opening Statement');
-        ?>
-        <h2 class="scoring-section-header">Plaintiff's Opening Statement</h2>
-        <?php
             scorePicker('plaintiff_opening');
-        ?>
-        <h2 class="scoring-section-header">Defendant's Opening Statement</h2>
-        <?php
+
+            createSectionHeader('Defendant', 'Opening Statement');
             scorePicker('defense_opening');
         ?>
         <div class="next-section-button">
@@ -107,17 +98,14 @@
             <option value="Sally">Sally</option>
             <option value="John">John</option>
         </select>
-        <?php createSectionHeader('Plaintiff', 'First Witness', 'Direct Examination') ?>
-        <h2 class="scoring-section-header">Plaintiff's Direct Examination</h2>
         <?php
+            createSectionHeader('Plaintiff', 'Direct Examination');
             scorePicker('plaintiff_first_witness_direct');
-        ?>
-        <h2 class="scoring-section-header">Defendant's Cross Examination</h2>
-        <?php
+
+            createSectionHeader('Defendant', 'Cross Examination');
             scorePicker('plaintiff_first_witness_cross');
-        ?>
-        <h2 class="scoring-section-header">Plaintiff's Witness Presentation</h2>
-        <?php
+
+            createSectionHeader('Plaintiff', 'Witness Performance');
             scorePicker('plaintiff_first_witness_performance');
         ?>
         <div class="next-section-button">
@@ -130,16 +118,14 @@
             <option value="Sally">Sally</option>
             <option value="John">John</option>
         </select>
-        <h2 class="scoring-section-header">Plaintiff's Direct Examination</h2>
         <?php
+            createSectionHeader('Plaintiff', 'Direct Examination');
             scorePicker('plaintiff_second_witness_direct');
-        ?>
-        <h2 class="scoring-section-header">Defendant's Cross Examination</h2>
-        <?php
+
+            createSectionHeader('Defendant', 'Cross Examination');
             scorePicker('plaintiff_second_witness_cross');
-        ?>
-        <h2 class="scoring-section-header">Plaintiff's Witness Presentation</h2>
-        <?php
+
+            createSectionHeader('Plaintiff', 'Witness Performance');
             scorePicker('plaintiff_second_witness_performance');
         ?>
         <div class="next-section-button">
@@ -152,16 +138,14 @@
             <option value="Sally">Sally</option>
             <option value="John">John</option>
         </select>
-        <h2 class="scoring-section-header">Plaintiff's Direct Examination</h2>
         <?php
+            createSectionHeader('Plaintiff', 'Direct Examination');
             scorePicker('plaintiff_third_witness_direct');
-        ?>
-        <h2 class="scoring-section-header">Defendant's Cross Examination</h2>
-        <?php
+
+            createSectionHeader('Defendant', 'Cross Examination');
             scorePicker('plaintiff_third_witness_cross');
-        ?>
-        <h2 class="scoring-section-header">Plaintiff's Witness Presentation</h2>
-        <?php
+
+            createSectionHeader('Plaintiff', 'Witness Performance');
             scorePicker('plaintiff_third_witness_performance');
         ?>
         <div class="next-section-button">
@@ -174,16 +158,14 @@
             <option value="Paul">Paul</option>
             <option value="James">James</option>
         </select>
-        <h2 class="scoring-section-header">Defendant's Direct Examination</h2>
         <?php
+            createSectionHeader('Defendant', 'Direct Examination');
             scorePicker('defense_first_witness_direct');
-        ?>
-        <h2 class="scoring-section-header">Plaintiff's Cross Examination</h2>
-        <?php
+
+            createSectionHeader('Plaintiff', 'Cross Examination');
             scorePicker('defense_first_witness_cross');
-        ?>
-        <h2 class="scoring-section-header">Defendant's Witness Presentation</h2>
-        <?php
+
+            createSectionHeader('Defendant', 'Witness Performance');
             scorePicker('defense_first_witness_performance');
         ?>
         <div class="next-section-button">
@@ -196,16 +178,14 @@
             <option value="Paul">Paul</option>
             <option value="James">James</option>
         </select>
-        <h2 class="scoring-section-header">Defendant's Direct Examination</h2>
         <?php
+            createSectionHeader('Defendant', 'Direct Examination');
             scorePicker('defense_second_witness_direct');
-        ?>
-        <h2 class="scoring-section-header">Plaintiff's Cross Examination</h2>
-        <?php
+
+            createSectionHeader('Plaintiff', 'Cross Examination');
             scorePicker('defense_second_witness_cross');
-        ?>
-        <h2 class="scoring-section-header">Defendant's Witness Presentation</h2>
-        <?php
+
+            createSectionHeader('Defendant', 'Witness Performance');
             scorePicker('defense_second_witness_performance');
         ?>
         <div class="next-section-button">
@@ -218,16 +198,14 @@
             <option value="Paul">Paul</option>
             <option value="James">James</option>
         </select>
-        <h2 class="scoring-section-header">Defendant's Direct Examination</h2>
         <?php
+            createSectionHeader('Defendant', 'Direct Examination');
             scorePicker('defense_third_witness_direct');
-        ?>
-        <h2 class="scoring-section-header">Plaintiff's Cross Examination</h2>
-        <?php
+
+            createSectionHeader('Plaintiff', 'Cross Examination');
             scorePicker('defense_third_witness_cross');
-        ?>
-        <h2 class="scoring-section-header">Defendant's Witness Presentation</h2>
-        <?php
+
+            createSectionHeader('Defendant', 'Witness Performance');
             scorePicker('defense_third_witness_performance');
         ?>
         <div class="next-section-button">
