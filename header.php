@@ -1,6 +1,7 @@
 <?php
     include 'scorePicker.php';
     include 'sectionHeader.php';
+    include_once 'db.php';
 ?>
 
 <!DOCTYPE html>
