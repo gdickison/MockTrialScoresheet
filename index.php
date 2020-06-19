@@ -169,7 +169,7 @@
         </div>
         <p>-----------------------Page Break-----------------------------</p>
         <h2>Defendant's First Witness</h2>
-        <select name="defendant_first_witness" id="" class="witness-name-select">
+        <select name="defense_first_witness" id="" class="witness-name-select">
             <option value="Peter">Peter</option>
             <option value="Paul">Paul</option>
             <option value="James">James</option>
@@ -189,7 +189,7 @@
         </div>
         <p>-----------------------Page Break-----------------------------</p>
         <h2>Defendant's Second Witness</h2>
-        <select name="defendant_second_witness" id="" class="witness-name-select">
+        <select name="defense_second_witness" id="" class="witness-name-select">
             <option value="Peter">Peter</option>
             <option value="Paul">Paul</option>
             <option value="James">James</option>
@@ -209,7 +209,7 @@
         </div>
         <p>-----------------------Page Break-----------------------------</p>
         <h2>Defendant's Third Witness</h2>
-        <select name="defendant_third_witness " id="" class="witness-name-select">
+        <select name="defense_third_witness " id="" class="witness-name-select">
             <option value="Peter">Peter</option>
             <option value="Paul">Paul</option>
             <option value="James">James</option>
