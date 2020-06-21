@@ -18,6 +18,8 @@
                 echo $row['username']."</br>";
             }
         }
+
+        teamCodeGenerator(10);
     ?>
     <form action="scoresheet.php" name="scoring-form" method="post">
     <h2>Select Teams</h2>
