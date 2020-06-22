@@ -19,7 +19,7 @@
             }
         }
 
-        teamCodeGenerator(10);
+        $aTeamCodes = ['ABH', 'DGE', 'SEG', 'WLD', 'WLC', 'HWJ', 'KOE'];
     ?>
     <form action="scoresheet.php" name="scoring-form" method="post">
     <h2>Select Teams</h2>
@@ -29,16 +29,14 @@
         </div>
         <div class="team-code-select">
             <select name="plaintiff_code" id="" class="plaintiff-code-dropdown" required>
-                <option value="ABC">ABC</option>
-                <option value="DEF">DEF</option>
-                <option value="GHI">GHI</option>
-                <option value="XYZ">XYZ</option>
+                <?php
+                    teamCodeSelectOptions($aTeamCodes);
+                ?>
             </select>
             <select name="defendant_code" id="" class="defendant-code-dropdown" required>
-                <option value="ABC">ABC</option>
-                <option value="DEF">DEF</option>
-                <option value="GHI">GHI</option>
-                <option value="XYZ">XYZ</option>
+                <?php
+                    teamCodeSelectOptions($aTeamCodes);
+                ?>
             </select>
         </div>
         <div class="section-headers">
