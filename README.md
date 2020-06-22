@@ -1,2 +1,3 @@
-# jsformtest
-The goal is to create a basic form using HTML, CSS, JS, and PHP [UPDATE: + mySQL]
+# MockTrialScoresheet
+
+Scoring system for a mock trial competition.
