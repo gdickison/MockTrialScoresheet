@@ -3,9 +3,12 @@
 
     $sSchoolName = $_POST['school_name'];
 
+    /* TODO - this is comparing the entire input to the table, but if the input contains anything new it won't work. What can I do instead? */
     $qCheckForSchool = "SELECT * FROM school WHERE school_name LIKE CONCAT('%', '$_POST[school_name]', '%');";
 
     $res = mysqli_query($con, $qCheckForSchool);
+
+    print_r(mysqli_num_rows($res));
 
     if(mysqli_num_rows($res) > 0){
         echo "That school is already registered";
