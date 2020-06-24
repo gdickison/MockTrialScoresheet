@@ -4,21 +4,6 @@
 <body>
     <h1>Idaho High School Mock Trial Competition Scoresheet</h1>
     <?php
-    /*     $sql = "INSERT INTO users (first_name, last_name, username, email, password) */
-    /*         VALUES('Greg', 'Dickison', 'gdickison', 'gdickison@gmail.com', 'password');"; */
-    /*     mysqli_query($con, $sql); */
-    /* ?>
-    <?php */
-        $sql = "SELECT * FROM users;";
-        $result = mysqli_query($con, $sql);
-        $resultCheck = mysqli_num_rows($result);
-
-        if($resultCheck > 0){
-            while($row = mysqli_fetch_assoc($result)){
-                echo $row['username']."</br>";
-            }
-        }
-
         $aTeamCodes = ['ABH', 'DGE', 'SEG', 'WLD', 'WLC', 'HWJ', 'KOE'];
     ?>
     <form action="scoresheet.php" name="scoring-form" method="post">

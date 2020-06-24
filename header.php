@@ -1,5 +1,5 @@
 <?php
-    include 'teamCodeGenerator.php';
+    include 'helperFunctions.php';
     include 'scorePicker.php';
     include 'sectionHeader.php';
     include_once 'db.php';

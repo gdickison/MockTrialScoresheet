@@ -12,7 +12,11 @@
 <body>
     <h1>Team Registration</h1>
     <form action="submitRegistration.php" name="team_registration_form" method="POST">
-        <input type="text" name="school_name" required>
+        <select name="school_name" id="" class="school-name-dropdown" required>
+            <?php
+                highSchoolSelector($con);
+            ?>
+        </select>
         <input type="number" name="num_teams" min="1" max="3" value="1" required>
         <button type="submit" name="submit">Submit</button>
     </form>
