@@ -15,12 +15,12 @@
         <div class="team-code-select">
             <select name="plaintiff_code" id="" class="plaintiff-code-dropdown" required>
                 <?php
-                    teamCodeSelectOptions($aTeamCodes);
+                    teamCodeSelectOptions($con);
                 ?>
             </select>
             <select name="defendant_code" id="" class="defendant-code-dropdown" required>
                 <?php
-                    teamCodeSelectOptions($aTeamCodes);
+                    teamCodeSelectOptions($con);
                 ?>
             </select>
         </div>

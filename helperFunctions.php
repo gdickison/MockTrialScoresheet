@@ -7,9 +7,11 @@
 	}
 
 	/* Pull $aTeamCodes from the db */
-	function teamCodeSelectOptions($aTeamCodes){
-		foreach($aTeamCodes as $sTeamCode){
-			echo "<option value=".$sTeamCode.">".$sTeamCode."</option>";
+	function teamCodeSelectOptions($con){
+		$qGetTeamCodes = "SELECT team_code FROM team_codes;";
+		$response = mysqli_query($con, $qGetTeamCodes);
+		while ($row = mysqli_fetch_array($response, MYSQLI_ASSOC)){
+			echo "<option value='".$row['team_code']."'>".$row['team_code']."</option>";
 		};
 	}
 
