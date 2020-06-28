@@ -35,6 +35,7 @@
                         highSchoolSelector($con);
                     ?>
                 </select>
+                <p>Don't see your school? Please contact us and we will make sure you are added to the list.</p>
                 <h4>Address</h4>
                 <label for="street_address_line_1">Street Address</label>
                 <input name="street_address_line_1" id="street_address_line_1" type="text" required>
@@ -107,9 +108,9 @@
             <h4>Artist - Team 1</h4>
             <fieldset> <!-- TODO: Make this dynamic so it generates one for each team being registered -->
                 <label for="artist_1_first_name">First Name</label>
-                <input name="artist_1_first_name" id="artist_1_first_name" type="text" required>
+                <input name="artist_1_first_name" id="artist_1_first_name" type="text">
                 <label for="artist_1_last_name">Last Name</label>
-                <input name="artist_1_last_name" id="artist_1_last_name" type="text" required>
+                <input name="artist_1_last_name" id="artist_1_last_name" type="text">
             </fieldset>
             <button>Back</button>
             <button>Next</button>

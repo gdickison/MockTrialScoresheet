@@ -11,7 +11,7 @@
         echo "That school is already registered";
     }
     else {
-        $qNewSchool = "INSERT INTO school (
+        /* $qNewSchool = "INSERT INTO school (
             school_name
         ) VALUES (
             '$sSchoolName'
@@ -31,6 +31,10 @@
             );";
             mysqli_query($con, $newTeam);
             $x++;
+        } */
+
+        foreach($_POST as $name => $value){
+            echo ucwords(str_replace('_', ' ', $name)) . " " . $value . "</br>";
         }
 
         echo "Congratulations. You have registered " . $_POST[num_teams] . " teams for " . $sSchoolName . ".";
