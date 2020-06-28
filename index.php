@@ -3,9 +3,6 @@
 ?>
 <body>
     <h1>Idaho High School Mock Trial Competition Scoresheet</h1>
-    <?php
-        $aTeamCodes = ['ABH', 'DGE', 'SEG', 'WLD', 'WLC', 'HWJ', 'KOE'];
-    ?>
     <form action="scoresheet.php" name="scoring-form" method="post">
     <h2>Select Teams</h2>
         <div>

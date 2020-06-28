@@ -42,3 +42,8 @@ label {
 .radio-group label {
     display: block;
 }
+
+.banner {
+    width: 100%;
+    height: auto;
+}

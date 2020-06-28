@@ -34,6 +34,10 @@
         }
 
         echo "Congratulations. You have registered " . $_POST[num_teams] . " teams for " . $sSchoolName . ".";
+        echo "Here is the information you submitted:";
+        // TODO: Put registration details on a page they can save/print or download as a PDF
+        // TODO: submit confirmation email to user
+        // TODO: submit confirmation email to registrar
     }
 
 ?>
