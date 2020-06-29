@@ -19,6 +19,6 @@
 		$qGetSchools = "SELECT school_name FROM idaho_high_schools;";
 		$response = mysqli_query($con, $qGetSchools);
 		while ($row = mysqli_fetch_array($response, MYSQLI_ASSOC)){
-            echo "<option value='".$row['school_name']."'>".$row['school_name']."</option>";
-        };
+			echo "<option value='".$row['school_name']."'>".$row['school_name']."</option>";
+		};
 	}

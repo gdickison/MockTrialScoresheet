@@ -1,6 +1,6 @@
 body {
-    font-family: 'Roboto';
-    margin-left: 30px;
+	font-family: 'Roboto';
+	margin-left: 30px;
 }
 
 .rating-scale,
@@ -9,41 +9,41 @@ body {
 .radio-group-section-header,
 .round-radio-group,
 .courtroom-radio-group {
-    display: inline-block;
-    margin: 0 30px;
+	display: inline-block;
+	margin: 0 30px;
 }
 
 .scoring-section-header {
-    font-weight: 400;
+	font-weight: 400;
 }
 
 .next-section-button {
-    margin: 20px;
+	margin: 20px;
 }
 
 .team-code-dropdown-label {
-    margin: 0 20px;
+	margin: 0 20px;
 }
 
 input[type=radio] {
-    width: 30px;
-    height: 30px;
+	width: 30px;
+	height: 30px;
 }
 
 label {
-    color: red;
+	color: red;
 }
 
 .radio-group {
-    display: inline-block;
-    text-align: center;
+	display: inline-block;
+	text-align: center;
 }
 
 .radio-group label {
-    display: block;
+	display: block;
 }
 
 .banner {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
 }
