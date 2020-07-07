@@ -30,8 +30,12 @@ input[type=radio] {
 	height: 30px;
 }
 
+input + p {
+	display: inline-block;
+}
+
 label {
-	color: red;
+	display: block;
 }
 
 .radio-group {

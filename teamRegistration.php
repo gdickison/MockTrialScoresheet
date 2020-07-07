@@ -120,22 +120,30 @@
 			<p>Please let us know if you need any assistance</p>
 			<fieldset>
 				<legend>Select all that apply</legend>
-				<input name="help_request" value="attorney_coach_help" id="attorney_coach_help" type="checkbox">
+				<div>
+					<input name="help_request" value="attorney_coach_help" id="attorney_coach_help" type="checkbox">
 					<p>
 						My team would like some assistance recruiting an attorney coach
 					</p>
-				<input name="help_request" value="mentor_help" id="mentor_help" type="checkbox">
+				</div>
+				<div>
+					<input name="help_request" value="mentor_help" id="mentor_help" type="checkbox">
 					<p>
 						My team would like an experienced coach to serve as a team mentor.
 					</p>
-				<input name="help_request" value="scrimmage_help" id="scrimmage_help" type="checkbox">
+				</div>
+				<div>
+					<input name="help_request" value="scrimmage_help" id="scrimmage_help" type="checkbox">
 					<p>
 						My team would be interested in participating in a scrimmage prior to regionals.
 					</p>
-				<input name="help_request" value="training_help" id="training_help" type="checkbox">
+				</div>
+				<div>
+					<input name="help_request" value="training_help" id="training_help" type="checkbox">
 					<p>
 						My coaches would be interested in attending a mock trial training.
 					</p>
+				</div>
 			</fieldset>
 			<button>Back</button>
 			<button>Next</button>
