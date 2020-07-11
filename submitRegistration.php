@@ -1,9 +1,9 @@
 <?php
 	include 'header.php';
 
-	$sSchoolName = $_POST['school_name'];
+	$sSchoolName = $_POST[school_name];
 
-	$qCheckForSchool = "SELECT * FROM school WHERE school_name='$_POST[school_name]';";
+	$qCheckForSchool = "SELECT * FROM school WHERE school_name='$sSchoolName';";
 
 	$res = mysqli_query($con, $qCheckForSchool);
 
@@ -11,7 +11,7 @@
 		echo "That school is already registered";
 	}
 	else {
-		/* $qNewSchool = "INSERT INTO school (
+		$qNewSchool = "INSERT INTO school (
 			school_name
 		) VALUES (
 			'$sSchoolName'
@@ -31,7 +31,7 @@
 			);";
 			mysqli_query($con, $newTeam);
 			$x++;
-		} */
+		}
 
 		foreach($_POST as $name => $value){
 			echo ucwords(str_replace('_', ' ', $name)) . " " . $value . "</br>";
