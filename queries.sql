@@ -122,3 +122,46 @@ INSERT INTO idaho_mock_trial.scoresheet(
 
 INSERT INTO idaho_mock_trial.comments (round_number, team_code, comments)
 VALUES ($iRound, $sPlaintiff, $sPlaintiffComments), ($iRound, $sDefendant, $sDefendantComments);
+
+$sSchoolName = $_POST[school_name];
+$sStreetAddressLine1 = $_POST[street_address_line_1];
+$sStreetAddressLine2 = $_POST[street_address_line_2];
+$sAddressCity = $_POST[address_city];
+$sAddressState = $_POST[address_state];
+$sAddressZip = $_POST[address_zip];
+$iNumTeams = $_POST[num_teams];
+$sTeacher1FirstName = $_POST[teacher_1_first_name];
+$sTeacher1LastName = $_POST[teacher_1_last_name];
+$sTeacher1Telephone = $_POST[teacher_1_telephone];
+$sTeacher1Email = $_POST[teacher_1_email];
+$sAttorne1FirstName = $_POST[attorney_1_first_name];
+$sAttorney1LastName = $_POST[attorney_1_last_name];
+$sAttorney1Telephone = $_POST[attorney_1_telephone];
+$sAttorney1Email = $_POST[attorney_1_email];
+$sArtist1FirstName = $_POST[artist_1_first_name];
+$sArtist1LastName = $_POST[artist_1_last_name];
+$sHelpRequest = $_POST[help_request];
+$sRegionalChoice = $_POST[regional_choice];
+$sPaymentMethod = $_POST[payment_method];
+
+ALTER TABLE idaho_mock_trial.school
+
+ADD `street_address_line_1` VARCHAR(50),
+ADD `street_address_line_2` VARCHAR(50),
+ADD `address_city` VARCHAR(50),
+ADD `address_state` VARCHAR(2),
+ADD `address_zip` INT,
+ADD `num_teams` INT,
+ADD `teacher_1_first_name` VARCHAR(50),
+ADD `teacher_1_last_name` VARCHAR(50),
+ADD `teacher_1_telephone` VARCHAR(15),
+ADD `teacher_1_email` VARCHAR(50),
+ADD `attorney_1_first_name` VARCHAR(50),
+ADD `attorney_1_last_name` VARCHAR(50),
+ADD `attorney_1_telephone` VARCHAR(15),
+ADD `attorney_1_email` VARCHAR(50),
+ADD `artist_1_first_name` VARCHAR(50),
+ADD `artist_1_last_name` VARCHAR(50),
+ADD `help_request` VARCHAR(50),
+ADD `regional_choice` VARCHAR(50),
+ADD `payment_method` VARCHAR(50);
