@@ -1,5 +1,5 @@
 <?php
-	include 'header.php';
+	include '../header.php';
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +10,7 @@
 	<title>Team Registration</title>
 </head>
 <body>
-	<img class="banner" src="resources/ILF-blue-horizontal.5d72d865746a76.72733695.png" alt="ILF banner">
+	<img class="banner" src="../resources/ILF-blue-horizontal.5d72d865746a76.72733695.png" alt="ILF banner">
 	<h1>2021 Idaho High School Mock Trial Competition</h1>
 	<h3>Team Registration Form</h3>
 	<div>

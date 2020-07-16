@@ -1,5 +1,5 @@
 <?php
-	include 'header.php';
+	include '../header.php';
 
 	$sSchoolName = $_POST[school_name];
 	$sStreetAddressLine1 = $_POST[street_address_line_1];
